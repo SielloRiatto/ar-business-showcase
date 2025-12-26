@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getLanguageOnServer, pathnameHasLanguage } from './i18n';
 
-export default function middleware(request: NextRequest) {
+export default function proxy(request: NextRequest) {
     const pathname = request.nextUrl.pathname;
 
     if (pathnameHasLanguage(pathname)) return NextResponse.next()
