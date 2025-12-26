@@ -14,14 +14,8 @@ export default function Home(
 
   return (
       <div className="min-h-screen flex flex-col">
-        <header className="p-4 border-b">
-          <nav className="max-w-7xl mx-auto flex justify-between items-center">
-            <div className="flex gap-6">
-              <a href="#" className="hover:underline">{dictionary.nav.home}</a>
-              <a href="#" className="hover:underline">{dictionary.nav.about}</a>
-              <a href="#" className="hover:underline">{dictionary.nav.services}</a>
-              <a href="#" className="hover:underline">{dictionary.nav.contact}</a>
-            </div>
+        <header className="p-4">
+          <nav className="flex justify-between items-center">
             <LanguageSwitcher language_code={language_code} />
           </nav>
         </header>
@@ -34,9 +28,6 @@ export default function Home(
             <p className="text-xl text-gray-600 mb-8">
               {dictionary.home.subtitle}
             </p>
-            <button className="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg hover:bg-blue-700 transition">
-              {dictionary.home.cta}
-            </button>
           </div>
         </main>
       </div>
