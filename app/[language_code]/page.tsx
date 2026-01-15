@@ -1,5 +1,6 @@
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 import ExperienceCard from '@/components/ExperienceCard';
+import BackgroundGlow from '@/components/BackgroundGlow';
 import { getDictionary, Language } from '@/i18n';
 import { use } from 'react';
 
@@ -14,14 +15,16 @@ export default function Home(
   const dictionary = use(getDictionary(language_code))
 
   return (
-      <div className="min-h-screen flex flex-col bg-slate-950">
-        <header className="p-4">
+      <div className="min-h-screen flex flex-col bg-slate-950 relative overflow-hidden">
+        <BackgroundGlow />
+        
+        <header className="p-4 relative z-10">
           <nav className="flex justify-between items-center">
             <LanguageSwitcher language_code={language_code} />
           </nav>
         </header>
 
-        <main className="flex-1 container mx-auto px-4 py-12">
+        <main className="flex-1 container mx-auto px-4 py-12 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
 
             {/* Left side - Hero content */}
