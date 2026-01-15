@@ -7,9 +7,35 @@
   },
   "home": {
     "title": "Welcome to WebAR Business Showcase",
-    "subtitle": "A curated set of mobile-first AR demos designed to showcase real business use cases.\nLaunch instantly via link or QR — no app required.",
+    "subtitle": "A curated set of mobile-first AR demos designed to showcase real business use cases.\n\nLaunch instantly via link or QR — no app required.",
     "cta": "Get Started"
   },
+  "experiences": [
+    {
+      "title": "Product Visualization",
+      "description": "View 3D products in your space before purchasing",
+      "icon": "📦",
+      "href": "/experience/product"
+    },
+    {
+      "title": "Virtual Try-On",
+      "description": "Try accessories and clothing with AR technology",
+      "icon": "👓",
+      "href": "/experience/try-on"
+    },
+    {
+      "title": "Interactive Tours",
+      "description": "Explore locations with immersive AR guided tours",
+      "icon": "🗺️",
+      "href": "/experience/tours"
+    },
+    {
+      "title": "AR Learning",
+      "description": "Educational content with interactive AR elements",
+      "icon": "📚",
+      "href": "/experience/learning"
+    }
+  ],
   "common": {
     "learnMore": "Learn More",
     "loading": "Loading...",
